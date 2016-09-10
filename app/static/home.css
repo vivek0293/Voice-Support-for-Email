@@ -1,0 +1,30 @@
+#inner {
+    margin-top: 110px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 500px;
+    width: 30%;
+    text-align: center;
+
+    padding: 10px;
+}
+#outer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+    margin-left: 500px;
+    width: 30%;
+    text-align: center;
+
+    padding: 10px;
+}
+
+#submit {
+margin: auto;
+    display: block;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    /*background: greenyellow;
+    color: green;*/
+}
