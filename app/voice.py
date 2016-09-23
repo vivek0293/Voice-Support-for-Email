@@ -27,9 +27,6 @@ def home():
 @app.route("/value", methods=['GET', 'POST'])
 def mail():
     M = imaplib.IMAP4_SSL('imap.gmail.com')
-    # db = MySQLdb.connect("127.0.0.1","root","","voice" )
-    db = mysql.connector.connect(host='mail.cxfqvtil1ire.us-west-2.rds.amazonaws.com',database='voice',user='Vivek',password='Vivek0293')
-    print "DB connection successful"
     try:
         #x=raw_input("Email Id:")
         id = request.form['id']
@@ -51,7 +48,7 @@ def mail():
 
 
 def Authenticate(M):
-    db = mysql.connector.connect(host='127.0.0.1', database='voice', user='root', password='')
+    db = mysql.connector.connect(host='mail.cxfqvtil1ire.us-west-2.rds.amazonaws.com',database='voice',user='Vivek',password='Vivek0293')
     print "DB connection successful"
     rv, data = M.search(None, "ALL")
 
