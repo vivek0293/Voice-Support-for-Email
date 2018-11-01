@@ -48,7 +48,7 @@ def mail():
 
 
 def Authenticate(M):
-    db = mysql.connector.connect(host='mail.cxfqvtil1ire.us-west-2.rds.amazonaws.com',database='voice',user='Vivek',password='Vivek0293')
+    db = mysql.connector.connect(host='mail.cxfqvtil1ire.us-west-2.rds.amazonaws.com',database='voice',user='Vivek',password='****')
     print "DB connection successful"
     rv, data = M.search(None, "ALL")
 
